@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Game des Biais</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.querySelector(".btn");
+            btn.disabled = true;
+            btn.style.opacity = "0.5";
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.style.opacity = "1";
+            }, 6000); // 1 minute = 60000 ms
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans l'Escape Game des Biais !</h1>
+        <p>Explorez, apprenez et surmontez des défis pour découvrir les mystères des biais cognitifs.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WhRzJLotap8?si=FtumhKzeI8dB33F_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <button class="btn" onclick="location.href='biais.html'">Commencer l'aventure</button>
+    </header>
+</body>
+</html>

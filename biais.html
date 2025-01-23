@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Biais Cognitifs</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.querySelector(".btn");
+            btn.disabled = true;
+            btn.style.opacity = "0.5";
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.style.opacity = "1";
+            }, 6000); // 1 minute = 60000 ms
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Les Biais Cognitifs</h1>
+        <p>Un biais cognitif est une déviation systématique de la pensée logique et rationnelle.</p>
+    </header>
+    <main>
+        <p>Apprenez-en plus sur les biais et testez vos connaissances !</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JGsUQdGX_qM?si=9WbRw3mV4GHn6fna&amp;controls=0&amp;start=82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <a href="index.html" class="btn-retour">Retour</a>
+        <button class="btn" onclick="location.href='qcm1.html'">Suivant</button>
+    </main>
+</body>
+</html>
